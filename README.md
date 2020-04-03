@@ -10,7 +10,11 @@ The code imports data for three major US cities (Chicago, New York City, Washing
 and uses descriptive statistics to analyze usage behavior.
 
 ### Files used
-Include the files used
+Files used for the project:
+bikeshare_2.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
