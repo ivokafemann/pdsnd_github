@@ -153,6 +153,13 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
 
     def conversion(time):
+        """
+        Convert the input from seconds to the time format HH:MM:SS
+
+        Args:
+            (int) time - value in seconds to convert to HH:MM:SS
+
+        """
         a=str(time//3600)
         b=str((time%3600)//60)
         c=str((time%3600)%60)
