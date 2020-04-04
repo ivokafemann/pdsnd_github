@@ -212,6 +212,8 @@ def individual_data(df):
             break
 
 def main():
+    """Define main function to have a starting point and to call other functions"""
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
