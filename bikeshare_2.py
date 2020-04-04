@@ -170,7 +170,11 @@ def trip_duration_stats(df):
 
 
 def user_stats(df, city):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users regarding the counts of user types.
+    If the city is either Chicago or New York City, additionally display statistics regarding
+    gender as well as birthday.
+    """
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -200,8 +204,10 @@ def user_stats(df, city):
 
 
 def individual_data(df):
-    """Displays the items of the first 5 rows of the data frame defined by the get_filters function."""
-    """Asks if the user wants to see 5 more rows of data until the input is "no"."""
+    """
+    Displays the items of the first 5 rows of the data frame defined by the get_filters function.
+    Asks if the user wants to see 5 more rows of data until the input is "no".
+    """
 
     count = 0
     while True:
@@ -212,7 +218,7 @@ def individual_data(df):
             break
 
 def main():
-    """Define main function to have a starting point and to call other functions"""
+    """Define main function to have a starting point and to call other functions."""
 
     while True:
         city, month, day = get_filters()
